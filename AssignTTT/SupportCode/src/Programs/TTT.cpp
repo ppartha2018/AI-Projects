@@ -6,6 +6,18 @@
 #include <iostream>
 
 /*
+Author: Prasanna Parthasarathy , Area: Artifical Intelligence, Heuristic Search, 03/2018
+This is an implementation of MiniMax (NegaMax) Search Algorithm with alpha-beta pruning, to make an AI player play a better
+move in tic-tac-toe game. It uses hand-constructed Heruistic function to guide the search in the game tree.
+
+Functions:
+
+TTT::EvalState(...) : Heuristic Calculator
+double TTT::NegaMax(...) :  The algorithm itself
+
+/*
+
+/*
 Here we caputure the consecutive tiles in row or column or diagonal or anti-diagonal each individually
 And call getSCore(n) on each of them...
 Always return from Max's point of view, so win for Max=-MaxVal, win for Min=-MaxVal, draw = 0
